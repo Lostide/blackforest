@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Гитарная мастерская</title>
   <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
   <style>
     .bd-placeholder-img {
@@ -59,13 +60,17 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    .bf-font {
-      font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-      font-size: 14px;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      line-height: 20px;
+    .montserrat {
+      font-family: 'Montserrat';
+      font-size: 22px;
+    }
+
+    .d7 {
+      width: 100; 
+      height: 100;
+      border-top: 100px solid #68B8AE;
+      border-right: 200px solid transparent;
+      position: relative;
     }
   </style>
 
@@ -80,8 +85,7 @@
         <img src="images/runes.png" alt="black_forest_logo" width="200" height="50">
 
         <ul class="nav col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-white">Цены</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Контакты</a></li>
+         
         </ul>
 
         <div class="text-end height">
@@ -92,11 +96,11 @@
   </header>
 
   <main>
-
-    <section class="py-4 text-center container">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <img src="images/black-forest-logo.png" class="img-fluid" alt="Responsive image">
-        <p class="bf-font fs-4 mt-4">Мастерская по ремонту струнных музыкальных инструментов</p>
+    <section class="py-4 container">
+      <div class="col-md-8 ">
+        <div class="d7"><img src="images/bassss.png" class="img-fluid" alt="Responsive image"></div>
+        <p class="montserrat mt-4 fs-2">Мастерская Black Forest занимается настройкой, обслуживанием, ремонтом и изготовлением гитар!</p>
+        
       </div>
     </section>
 
