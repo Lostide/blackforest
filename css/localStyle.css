@@ -77,15 +77,42 @@
    color: #f8f9fa;
 }
 
-.guitar-background{
-    background: center / contain no-repeat url("/untitled2/images/bgn.jpg");
-    background-size: cover;
+@media (max-width:768px){
+    .guitar-background{
+        background: center / contain no-repeat url("/blackforest/images/guitar-dark-sm.jpg") ;
+        background-size: cover;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        min-height: 50vh!important;
+    }
+}
+@media (min-width:768px) {
+    .guitar-background {
+        background: center / contain no-repeat url("/blackforest/images/bgn.jpg");
+        background-size: cover;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        min-height: 100vh!important;
+    }
+}
+.guitar-background::after{
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -1;
+    background: rgb(59,0,113);
+    background: linear-gradient(180deg, rgba(59,0,113,0.9699230033810399) 0%, rgba(80,0,107,0.9167017148656338) 28%, rgba(130,77,3,0.6561975131849616) 69%, rgba(189,113,0,0.26684177088804273) 100%);
 }
+
 .bg-overlay {
     position: absolute;
     top: 0;
@@ -95,17 +122,18 @@
 
 }
 .bg-overlay:before {
-    content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
     left: 0;
-    right: 0;
+    top: 0;
     background: rgb(59,0,113);
     background: linear-gradient(180deg, rgba(59,0,113,0.9699230033810399) 0%, rgba(80,0,107,0.9167017148656338) 28%, rgba(130,77,3,0.6561975131849616) 69%, rgba(189,113,0,0.26684177088804273) 100%);
 }
 .img-team{
-    height: 350px;
+
 }
 .team-bg {
     background-color: #eee;
@@ -179,9 +207,7 @@ color: #ffffff;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
 }
-.card-pricing.card-background:after {
-    background-color: rgba(0,0,0,.65);
-}
+
 
 .card-background:after {
     position: absolute;
