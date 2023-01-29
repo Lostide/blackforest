@@ -79,7 +79,7 @@
 
 @media (max-width:768px){
     .guitar-background{
-        background: center / contain no-repeat url("/images/guitar-dark-sm.jpg") ;
+        background: center / contain no-repeat url("/images/guitar-dark-sm-min.jpg") ;
         background-size: cover;
         top: 0;
         bottom: 0;
@@ -91,7 +91,7 @@
 }
 @media (min-width:768px) {
     .guitar-background {
-        background: center / contain no-repeat url("/images/bgn.jpg");
+        background: center / contain no-repeat url("/images/bgn-min.jpg");
         background-size: cover;
         top: 0;
         bottom: 0;
